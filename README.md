@@ -74,7 +74,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### 1. Components:
 
 Must import "React from 'react'"
-Functions as components need to be Capitalized
-From the component we return HTML which is ACTUALLY JSX
+
+Components must be Capitalized!
+When exporting components as functions capitalization not needed, when importing components as functions CAPITALIZATION is needed.
+
 When rendering components we pass WHAT-WE-ARE-RENDERING(COMPONENT) and WHERE-WE-ARE-RENDERING
+
+From the component we return HTML which is ACTUALLY JSX
+Stateless functional components (dummy components) ALWAYS return JSX
+
 Component MUST contain self-closing tag if there is none
+
+### 2. JSX Rules:
+
+ALWAYS return a single element! (Always just ONE PARENT ELEMENT. No sibling elements at the top of the HTML hierarchy.)
+
+Follow HTML semantics! Section, article, React.Fragment ("<>"), ...
+
+Use camelCase for html attributes ("onClick", "onChange")...
+
+use "className" instead of "class"!
+
+Close every element! Even html elements that do not usually have a closing tag. <HTML ELEMENT />
+
+Use parentheses ()()()()()() in return statements!
