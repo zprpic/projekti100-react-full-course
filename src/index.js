@@ -2,6 +2,7 @@ import React from "react";
 import reactDom from "react-dom";
 
 import { books } from "./books";
+import Book from "./Book"; //default export - name can be changed from "Book" to anything (but have to update it where it is mentioned/called)
 
 //CSS
 import "./index.css";
@@ -13,30 +14,6 @@ const BookList = () => {
         return <Book key={book.id} {...book} />;
       })}
     </section>
-  );
-};
-
-const Book = ({ author, title, img }) => {
-  //attribute, eventHandler
-  //onClick, onMouseOver
-  const clickHandler = () => {
-    alert("hello world!");
-  };
-  const complexExample = (author) => {
-    console.log(author);
-  };
-  return (
-    <article className="book">
-      <img src={img} alt="Book"></img>
-      <h1 onClick={() => console.log(title)}>{title}</h1>
-      <h4>{author}</h4>
-      <button type="button" onClick={clickHandler}>
-        reference example
-      </button>
-      <button type="button" onClick={() => complexExample(author)}>
-        more complex example
-      </button>
-    </article>
   );
 };
 
