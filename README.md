@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Personal notes:
+
+### 1. Components:
+
+Must import "React from 'react'"
+Functions as components need to be Capitalized
+From the component we return HTML which is ACTUALLY JSX
+When rendering components we pass WHAT-WE-ARE-RENDERING(COMPONENT) and WHERE-WE-ARE-RENDERING
+Component MUST contain self-closing tag if there is none
