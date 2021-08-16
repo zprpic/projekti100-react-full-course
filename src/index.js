@@ -1,19 +1,41 @@
 import React from "react";
 import reactDom from "react-dom";
 
-const Greeting = () => {
+const BookList = () => {
   return (
-    <div>
-      <Person />
-      <Message />
-    </div>
+    <section>
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
 };
 
-const Person = () => <h2>prle</h2>;
-
-const Message = () => {
-  return <p>para para paragraph</p>;
+const Book = () => {
+  return (
+    <article>
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
 };
 
-reactDom.render(<Greeting />, document.getElementById("root"));
+const Image = () => (
+  <img
+    src="https://images-na.ssl-images-amazon.com/images/I/517h-u1AQlL._SX482_BO1,204,203,200_.jpg"
+    alt="Book image"
+  ></img>
+);
+
+const Title = () => {
+  return <h1>I Love You To The Moon And Back</h1>;
+};
+
+const Author = () => {
+  return <h4>Amelia Hepworth</h4>;
+};
+
+reactDom.render(<BookList />, document.getElementById("root"));
